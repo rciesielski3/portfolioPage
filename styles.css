@@ -1,0 +1,273 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poetsen One', Arial, sans-serif; 
+    background: linear-gradient(to bottom right, #2c3e50, #98c2de); 
+    color: #fff; 
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+}
+  
+.menu {
+    width: 20%;
+    background-color: rgba(22, 23, 58, 0.586); 
+    padding: 20px;
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    overflow-y: auto; 
+}
+  
+.menu img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.menu h2 {
+    margin: 5px 0;
+    color: #fff; 
+}
+  
+.menu p {
+    margin: 5px 0;
+    color: #ccc; 
+}
+  
+nav ul {
+    font-size: x-large;
+    list-style-type: none;
+    padding: 0;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-10%); 
+    width: 100%; 
+}
+  
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li.active a {
+    color: #ff5733;
+}
+
+nav ul li.active::after {
+    content: ""; 
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #ff5733; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px; 
+    transform: translateY(-50%);
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+  
+.content {
+    margin-left: 25%;
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; 
+    height: calc(100vh - 50px);
+}
+
+li {
+    color: rgb(10, 10, 69)
+}
+
+.section ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.section ul li::before {
+    content: "\2799"; 
+    color: #373e47;
+    font-size: 18px;
+    margin-right: 10px; 
+}
+
+.display-about-me-info, .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.display-about-me-info .box {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.display-about-me-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.display-about-me-info .box:nth-child(2) {
+    background-color: #5318ab; 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-about-me-info .box:nth-child(3) {
+    background-color: #007bff; 
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-about-me-info .box:nth-child(4) {
+    background-color: rgb(14, 109, 36); 
+    border-radius: 5px;
+}
+
+.display-about-me-info .box:last-child {
+    background-color: #7a7a7a;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+    color: #fff; 
+}
+
+.section p {
+    margin: 5px 0; 
+    line-height: 1.4; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.repo-box {
+    padding: 20px;
+    background-color: #f0f0f060;
+    border-radius: 10px;
+}
+
+.repo-box a {
+    font-weight: bold;
+}
+
+.repo-box p {
+    margin-top: 10px;
+}
+
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-top: 50px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#contactContent {
+    display: none;
+}
+
+#contactContent h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+#form {
+    max-width: 400px; 
+}
+
+#form div {
+    margin-bottom: 20px; 
+}
+
+#form label {
+    font-weight: bold; 
+    color: #fff; 
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #fff; 
+}
+
+#form textarea {
+    height: 100px; 
+}
+
+#form button, .btnLinkedIn {
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form button[type="reset"] {
+    background-color: #dc3545; 
+    margin-right: 10px;
+}
+
+#form button:hover {
+    background-color: #0056b3; 
+}

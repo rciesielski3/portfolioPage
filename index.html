@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <script src="scripts.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="menu">
+      <div class="profile">
+        <img src="https://media.licdn.com/dms/image/C4E03AQHgVHt-EAPX5A/profile-displayphoto-shrink_400_400/0/1613370851659?e=1720051200&v=beta&t=PEY3v6ylyHFHDGHltSS0cA5fAKYHYEIKM9yaCwIjvaI" alt="Profile Picture">
+        <h2>Rafal Ciesielski</h2>
+        <p><strong>QA Engineer</strong></p>
+        <p>FullStack Learner</p>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#github">GITHUB</a></li>
+            <li><a href="#mysmarthome">MYSMARTHOME</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+        <div id="contentContainer"></div>
+        <div id="contactContent" style="display: none;">
+            <h2>Contact Me</h2>
+            <form id="form">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <div>
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                  <div>
+                    <button type="reset">Clear</button>
+                    <button type="submit">Send</button>
+                  </div>
+            </form>
+          </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Rafal Ciesielski. All rights reserved.</p>
+  </footer>
+
+  <!-- Make sure scripts.js is properly linked -->
+  
+</body>
+</html>
