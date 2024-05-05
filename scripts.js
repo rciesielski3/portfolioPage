@@ -125,27 +125,25 @@ function displaySkillsPage() {
     }
     
     function displayMysmarthomePreview() {
+        const iframeContainer = document.getElementById("contentContainer");
         contentContainer.innerHTML = "";
 
         const iframe = document.createElement("iframe");
-        iframe.src = "https://mysmarthome.cba.pl";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none";
-
-        contentContainer.appendChild(iframe);
+        iframe.src = "https://mysmarthome.cba.pl/";
+        iframe.setAttribute("allowfullscreen", ""); 
+        iframe.setAttribute("webkitallowfullscreen", ""); 
+        iframeContainer.appendChild(iframe);
     }
 
     function displayBlogPreview() {
-        contentContainer.innerHTML = "";
-
+        const iframeContainer = document.getElementById("contentContainer");
+        iframeContainer.innerHTML = "";
+    
         const iframe = document.createElement("iframe");
         iframe.src = "https://qa-journey.blogspot.com/";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none";
-
-        contentContainer.appendChild(iframe);
+        iframe.setAttribute("allowfullscreen", ""); 
+        iframe.setAttribute("webkitallowfullscreen", ""); 
+        iframeContainer.appendChild(iframe);
     }
 
     async function fetchLinkedInProfile() {
