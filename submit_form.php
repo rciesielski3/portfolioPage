@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(["success" => false, "error" => "Failed to send email."]);
     }
 } else {
+    header("HTTP/1.1 405 Method Not Allowed");
     echo json_encode(["success" => false, "error" => "Method not allowed."]);
 }
 ?>
