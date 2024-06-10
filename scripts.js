@@ -39,6 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const certificationCourses = [
     {
+      title: "Test Debugging Academy",
+      image: "images/tdaEN.jpeg",
+    },
+    {
+      title: "Web Developer: HTML, CSS, Java Script",
+      image: "images/devstock1.png",
+    },
+    {
       title: "Backend Testing Academy",
       image: "images/stb2EN.jpeg",
     },
